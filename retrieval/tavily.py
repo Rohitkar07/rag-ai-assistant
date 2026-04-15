@@ -1,12 +1,9 @@
 from tavily import TavilyClient
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
+import streamlit as st
 
 class TavilySearch:
     def __init__(self):
-        self.client = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
+        self.client = TavilyClient(api_key=st.secrets["TAVILY_API_KEY"])
 
     def search(self, query, k=3):
         try:
