@@ -1,0 +1,13 @@
+streamlit
+langchain
+langchain-community
+faiss-cpu
+rank-bm25
+pypdf
+sentence-transformers
+transformers
+google-api-python-client
+beautifulsoup4
+requests
+python-dotenv
+torchvision
